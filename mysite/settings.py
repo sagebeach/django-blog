@@ -35,8 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    'django.contrib.messages',
-    'livereload',
+    'django.contrib.messages'
     'django.contrib.staticfiles',
     'blog',
 ]
@@ -49,17 +48,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'livereload.middleware.LiveReloadScript',
 ]
 
 ROOT_URLCONF = 'mysite.urls'
-
-TEMPLATE_LOADERS = (  
-    ('django.template.loaders.cached.Loader', (  
-        'django.template.loaders.filesystem.Loader',  
-        'django.template.loaders.app_directories.Loader',  
-    )),  
-)  
 
 TEMPLATES = [
     {
